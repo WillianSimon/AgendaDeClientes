@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayane Ferreira Simon</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="seçãoAgendamento">
+    <section class="agendamento">
+        <header class="cabeçalho">
+            <h1 class="títuloMês"></h1>
+            <img class="fechar" src="Fechar.png" alt="Fechar">
+        </header>
+        <div class="dias">
+            <button class="botãoDiasDireita"><</button>
+            <button class="dia" id="diaPrimeiro" onclick="mudarCor(this)"></button>
+            <button class="dia" id="diaSegundo" onclick="mudarCor(this)"></button>
+            <button class="dia" id="diaTerceiro" onclick="mudarCor(this)"></button>
+            <button class="dia" id="diaQuarto" onclick="mudarCor(this)"></button>
+            <button class="dia" id="diaQuinto" onclick="mudarCor(this)"></button>
+            <button class="dia" id="diaSexto" onclick="mudarCor(this)"></button>
+            <button class="botãoDiasEsquerda">></button>
+        </div>
+
+        <div class="linha01"></div>
+
+        <div class="período">
+            <button class="período-btn" id="manhã" onclick="Selecionar(this), Manhã()">Manhã</button>
+            <button class="período-btn" id="tarde" onclick="Selecionar(this), Tarde()">Tarde</button>
+            <button class="período-btn" id="noite" onclick="Selecionar(this), Noite()">Noite</button>
+        </div>
+
+        <div class="horarios">
+            <button class="botãoHorarioEsquerda"><</button>
+            <button class="horas" id="horaUm" onclick="selecionarHora(this)"></button>
+            <button class="horas" id="horaDois" onclick="selecionarHora(this)"></button>
+            <button class="horas" id="horTrês" onclick="selecionarHora(this)"></button>
+            <button class="horas" id="horaQuatro" onclick="selecionarHora(this)"></button>
+            <button class="horas" id="horaCinco" onclick="selecionarHora(this)"></button>
+            <button class="horas" id="horaSeis" onclick="selecionarHora(this)"></button>
+            <button class="botãoHorarioDireita">></button>
+        </div>
+       
+
+        <div class="resumoServiço">
+            <div class="serviçoPreço">
+                <h2>DESIGN C/ HENNA</h2>
+                <H3>R$ 40,00</H3>
+            </div>
+
+            <div class="duração">
+                <p>10:00 - 13:00</p>
+            </div>
+        
+            <div class="linha02"></div>
+            
+            <div class="atendente">
+                <p>Profissional: <strong>DAYANE SIMON</strong></p>
+                <button id="alterarServiço" type="button">Alterar</button>
+            </div>
+        </div>
+
+        <div class="addServiço"><input type="button" value="+ Adcionar outro serviço"></div>
+
+        <div class="linha03"></div>
+
+        <div class="TotalPreçoeDuração">
+            <p class="valorTotal">R$ 40,00</p>
+            <p class="duração">1 hora</p>
+        </div>
+
+        <div class="botãoContinuar">
+            <input class="botão" type="button" value="Continuar">
+        </div>
+</section>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
